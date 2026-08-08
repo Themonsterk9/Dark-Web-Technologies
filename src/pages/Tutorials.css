@@ -1,0 +1,19 @@
+/* src/pages/Tutorials.css */
+.tutorials-page {
+  padding: 0.5rem 1rem 4rem;
+  color: #e2e8f0;
+}
+.tutorials-page h1 {
+  margin-bottom: 0.5rem;
+}
+.tutorials-page .intro {
+  color: #94a3b8;
+  margin-bottom: 2rem;
+}
+.tutorials-page .empty-state {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: #64748b;
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}

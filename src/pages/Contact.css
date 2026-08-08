@@ -1,0 +1,12 @@
+/* src/pages/Contact.css */
+.contact-page {
+  padding: 2rem 1rem;
+  color: #e2e8f0;
+}
+.contact-page h1 {
+  margin-bottom: 1rem;
+}
+.contact-page a {
+  color: #38bdf8;
+  text-decoration: underline;
+}

@@ -1,0 +1,129 @@
+/* src/pages/LegalPage.css
+   Shared styles for: About, Contact, Privacy Policy, Terms, Disclaimer
+*/
+
+.legal-page {
+  padding: 1rem 1rem 4rem;
+  color: var(--color-text-primary, #e0e0e0);
+  max-width: 760px; /* narrower for comfortable reading */
+}
+
+/* ── Header ──────────────────────────────────────────────────── */
+.legal-header {
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(196, 0, 0, 0.25);
+  padding-bottom: 1.5rem;
+}
+
+.legal-header h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  margin-bottom: 0.5rem;
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.legal-date {
+  font-size: 0.85rem;
+  color: var(--color-text-muted, #a0a0a0);
+  margin: 0;
+}
+
+/* ── Section ─────────────────────────────────────────────────── */
+.legal-section {
+  margin-bottom: 2.5rem;
+}
+
+.legal-section h2 {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  color: var(--color-text-primary, #e0e0e0);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.legal-section h3 {
+  font-size: 1rem;
+  color: var(--color-text-muted, #a0a0a0);
+  margin: 1rem 0 0.5rem;
+  font-family: 'Inter', sans-serif; /* body font for h3 in legal pages */
+  font-weight: 600;
+}
+
+.legal-section p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--color-text-muted, #a0a0a0);
+  margin-bottom: 0.85rem;
+}
+
+.legal-section p strong {
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.legal-section ul {
+  margin: 0.5rem 0 1rem 1.25rem;
+  list-style: disc;
+}
+
+.legal-section ul li {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-muted, #a0a0a0);
+  margin-bottom: 0.35rem;
+}
+
+.legal-section ul li strong {
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.legal-section a {
+  color: var(--color-accent-red, #c40000);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.legal-section a:hover,
+.legal-section a:focus {
+  opacity: 0.85;
+}
+
+/* ── Contact email highlight ──────────────────────────────────── */
+.contact-email {
+  font-size: 1.1rem !important;
+  margin: 1rem 0 !important;
+}
+
+.contact-email a {
+  font-weight: 600;
+}
+
+/* ── Project list ─────────────────────────────────────────────── */
+.project-list {
+  margin: 0.75rem 0 1rem 1.25rem;
+  list-style: disc;
+}
+
+.project-list li {
+  font-size: 0.95rem;
+  line-height: 1.75;
+  color: var(--color-text-muted, #a0a0a0);
+  margin-bottom: 0.5rem;
+}
+
+.project-list li strong {
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+/* ── Responsive ───────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .legal-page {
+    padding: 0.75rem 0.75rem 3rem;
+  }
+
+  .legal-header {
+    margin-bottom: 1.75rem;
+  }
+
+  .legal-section {
+    margin-bottom: 2rem;
+  }
+}

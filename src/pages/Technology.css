@@ -1,0 +1,185 @@
+/* src/pages/Technology.css */
+.technology-page {
+  padding: 1rem 1rem 4rem;
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.technology-page .page-header {
+  margin-bottom: 2rem;
+}
+
+.technology-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.technology-page .intro {
+  color: var(--color-text-muted, #a0a0a0);
+  font-size: 1.05rem;
+}
+
+/* Filter Pills */
+.tech-filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tech-filter-pills .pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  color: var(--color-text-muted, #a0a0a0);
+  padding: 0.35rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tech-filter-pills .pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.tech-filter-pills .pill.active {
+  background: rgba(196, 0, 0, 0.2);
+  border-color: var(--color-accent-red, #c40000);
+  color: #fff;
+}
+
+/* Tech Matrix Cards */
+.tech-matrix {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.tech-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.tech-card-header h2 {
+  font-size: 1.3rem;
+  color: var(--color-text-primary, #e0e0e0);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(196, 0, 0, 0.2);
+}
+
+.tech-rel-group {
+  margin-bottom: 1rem;
+}
+
+.tech-rel-group h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted, #a0a0a0);
+  margin-bottom: 0.4rem;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.rel-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.project-link-tag {
+  display: inline-block;
+  background: rgba(196, 0, 0, 0.12);
+  border: 1px solid rgba(196, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  color: #fca5a5;
+  text-decoration: none;
+}
+
+.project-link-tag:hover {
+  background: rgba(196, 0, 0, 0.25);
+  color: #fff;
+}
+
+.rel-list {
+  list-style: disc;
+  margin-left: 1.25rem;
+  font-size: 0.85rem;
+}
+
+.rel-list a {
+  color: var(--color-text-primary, #e0e0e0);
+  text-decoration: none;
+}
+
+.rel-list a:hover {
+  color: var(--color-accent-red, #c40000);
+  text-decoration: underline;
+}
+
+/* Summary section */
+.tech-by-project-section {
+  margin-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+}
+
+.tech-by-project-section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.summary-card h3 a {
+  color: var(--color-text-primary, #e0e0e0);
+  text-decoration: none;
+}
+
+.summary-card h3 a:hover {
+  color: var(--color-accent-red, #c40000);
+}
+
+.proj-cat {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #a0a0a0);
+  margin-bottom: 0.75rem;
+}
+
+.proj-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tech-item-badge {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #a0a0a0);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tech-item-badge:hover {
+  border-color: var(--color-accent-red, #c40000);
+  color: #fff;
+}

@@ -1,0 +1,121 @@
+/* src/pages/TutorialDetail.css */
+
+.tutorial-detail {
+  padding: 1rem 1rem 4rem;
+  color: var(--color-text-primary, #e0e0e0);
+  max-width: 800px;
+}
+
+.tutorial-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(196, 0, 0, 0.2);
+  padding-bottom: 1.5rem;
+}
+
+.header-meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.category-badge {
+  background: rgba(56, 189, 248, 0.15);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  color: #38bdf8;
+}
+
+.difficulty-badge {
+  border-radius: 4px;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.diff-beginner {
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid rgba(34, 197, 94, 0.4);
+  color: #4ade80;
+}
+
+.diff-intermediate {
+  background: rgba(234, 179, 8, 0.15);
+  border: 1px solid rgba(234, 179, 8, 0.4);
+  color: #facc15;
+}
+
+.diff-advanced {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.4);
+  color: #f87171;
+}
+
+.tutorial-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+.author-meta {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #a0a0a0);
+}
+
+.prerequisites-box,
+.tech-box,
+.related-project-box,
+.tutorial-sources {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.prerequisites-box h3,
+.tech-box h3,
+.related-project-box h3,
+.tutorial-sources h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.prerequisites-box ul,
+.tutorial-sources ul {
+  list-style: disc;
+  margin-left: 1.25rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.tutorial-body {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  margin-bottom: 2.5rem;
+}
+
+.tutorial-back {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.back-link {
+  color: var(--color-accent-red, #c40000);
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}

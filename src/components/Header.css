@@ -1,0 +1,131 @@
+/* src/components/Header.css */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  background: rgba(10, 10, 10, 0.85);
+  border-bottom: 1px solid rgba(196, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.brand-name {
+  margin-left: 0.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  white-space: nowrap;
+}
+
+.desktop-nav {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--color-text-muted);
+  position: relative;
+  padding: 0.25rem 0;
+  font-size: 0.9rem;
+  transition: color 0.25s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--color-text-primary);
+}
+
+.nav-link.active {
+  color: var(--color-text-primary);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: var(--color-accent-red);
+  border-radius: 2px;
+}
+
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.4rem;
+}
+
+.hamburger {
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: var(--color-text-primary);
+  transition: transform 0.3s ease;
+}
+
+.hamburger::before { top: -8px; }
+.hamburger::after { top: 8px; }
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 75%;
+  max-width: 320px;
+  height: 100vh;
+  background: rgba(10, 10, 10, 0.95);
+  backdrop-filter: blur(12px);
+  transition: left 0.3s ease;
+  padding-top: 4rem;
+  z-index: 1001;
+}
+
+.mobile-nav.open {
+  left: 0;
+}
+
+.mobile-link {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(196, 0, 0, 0.2);
+}
+
+.mobile-link.active {
+  background: rgba(196, 0, 0, 0.15);
+}
+
+@media (max-width: 960px) {
+  .desktop-nav { display: none; }
+  .mobile-toggle { display: block; }
+}

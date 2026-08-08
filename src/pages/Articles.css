@@ -1,0 +1,41 @@
+/* src/pages/Articles.css */
+.articles-page {
+  padding: 1rem 1rem 4rem;
+  color: #e2e8f0;
+}
+.articles-page h1 {
+  margin-bottom: 0.5rem;
+}
+.intro {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.category-filter button {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  color: #e2e8f0;
+  padding: 0.4rem 0.9rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+.category-filter button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+.category-filter button.active {
+  background: rgba(56, 189, 248, 0.2);
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}

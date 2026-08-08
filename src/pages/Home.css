@@ -1,0 +1,60 @@
+/* src/pages/Home.css */
+.hero-section {
+  position: relative;
+  min-height: 60vh;
+  padding: 3rem 1rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-primary);
+  text-align: center;
+  overflow: hidden;
+}
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, rgba(196,0,0,0.2), transparent 60%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 1rem;
+}
+.hero-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: var(--color-text-primary);
+  text-shadow: 0 0 8px var(--color-accent-red);
+}
+.hero-subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  margin-bottom: 2rem;
+  color: var(--color-text-muted);
+}
+.hero-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+.section.preview-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+.section.preview-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: var(--color-text-primary);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}

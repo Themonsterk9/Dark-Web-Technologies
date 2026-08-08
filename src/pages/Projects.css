@@ -1,0 +1,47 @@
+/* src/pages/Projects.css */
+.projects-page {
+  padding: 1rem 1rem 4rem;
+  color: var(--color-text-primary, #e0e0e0);
+}
+
+.projects-page .page-header {
+  margin-bottom: 2rem;
+}
+
+.projects-page h1 {
+  margin-bottom: 0.5rem;
+}
+
+.page-intro {
+  color: var(--color-text-muted, #a0a0a0);
+  font-size: 1.05rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card-summary {
+  font-size: 0.9rem;
+  color: var(--color-text-muted, #a0a0a0);
+  margin: 0.5rem 0 0.85rem;
+  line-height: 1.5;
+}
+
+.project-card-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}
+
+.mini-tag {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  color: var(--color-text-muted, #a0a0a0);
+}

@@ -1,0 +1,16 @@
+/* src/App.css - Global Application Layout */
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.content {
+  flex: 1;
+  padding-top: 1rem; /* Clean, natural spacing below sticky header */
+  box-sizing: border-box;
+}

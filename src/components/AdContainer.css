@@ -1,0 +1,39 @@
+/* src/components/AdContainer.css */
+
+.ad-container {
+  display: block;
+  margin: 2.5rem 0;
+  padding: 0.75rem 0;
+  border-top: 1px dashed rgba(255, 255, 255, 0.08);
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.08);
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  clear: both;
+}
+
+.ad-label {
+  display: block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted, #94a3b8);
+  margin-bottom: 0.5rem;
+  opacity: 0.7;
+}
+
+.adsbygoogle {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  min-height: 90px;
+}
+
+/* Ensure ad containers never overflow mobile screens */
+@media (max-width: 768px) {
+  .ad-container {
+    margin: 1.75rem 0;
+    padding: 0.5rem 0;
+  }
+}
