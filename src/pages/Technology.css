@@ -1,6 +1,6 @@
 /* src/pages/Technology.css */
 .technology-page {
-  padding: 1rem 1rem 4rem;
+  padding: 0.5rem 1rem 4rem;
   color: var(--color-text-primary, #e0e0e0);
 }
 
@@ -30,10 +30,12 @@
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
   color: var(--color-text-muted, #a0a0a0);
-  padding: 0.35rem 0.8rem;
+  padding: 0.45rem 0.8rem;
+  min-height: 44px;
   font-size: 0.85rem;
   cursor: pointer;
   transition: all 0.2s ease;
+  font-family: inherit;
 }
 
 .tech-filter-pills .pill:hover {
@@ -50,7 +52,7 @@
 /* Tech Matrix Cards */
 .tech-matrix {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
   margin-bottom: 3.5rem;
 }
@@ -95,10 +97,11 @@
   background: rgba(196, 0, 0, 0.12);
   border: 1px solid rgba(196, 0, 0, 0.3);
   border-radius: 4px;
-  padding: 0.2rem 0.6rem;
+  padding: 0.25rem 0.6rem;
   font-size: 0.8rem;
   color: #fca5a5;
   text-decoration: none;
+  min-height: 36px;
 }
 
 .project-link-tag:hover {
@@ -136,7 +139,7 @@
 
 .project-tech-summary-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr));
   gap: 1.25rem;
 }
 
@@ -172,7 +175,7 @@
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 4px;
-  padding: 0.15rem 0.5rem;
+  padding: 0.2rem 0.5rem;
   font-size: 0.75rem;
   color: var(--color-text-muted, #a0a0a0);
   cursor: pointer;

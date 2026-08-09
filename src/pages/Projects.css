@@ -1,6 +1,6 @@
 /* src/pages/Projects.css */
 .projects-page {
-  padding: 1rem 1rem 4rem;
+  padding: 0.5rem 1rem 4rem;
   color: var(--color-text-primary, #e0e0e0);
 }
 
@@ -19,7 +19,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
   gap: 1.5rem;
 }
 
