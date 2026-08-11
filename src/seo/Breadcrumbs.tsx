@@ -15,6 +15,8 @@ const staticSegmentNames: Record<string, string> = {
   'articles': 'Articles',
   'tutorials': 'Tutorials',
   'build-log': 'Build Log',
+  'release': 'Release',
+  'releases': 'Releases',
   'about': 'About',
   'contact': 'Contact',
   'privacy-policy': 'Privacy Policy',

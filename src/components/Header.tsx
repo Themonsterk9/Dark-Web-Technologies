@@ -14,6 +14,7 @@ const Header: React.FC = () => {
     { to: '/articles', label: 'Articles' },
     { to: '/tutorials', label: 'Tutorials' },
     { to: '/build-log', label: 'Build Log' },
+    { to: '/release', label: 'Release' },
     { to: '/about', label: 'About' },
     { to: '/contact', label: 'Contact' },
   ];

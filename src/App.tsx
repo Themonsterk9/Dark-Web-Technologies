@@ -14,6 +14,7 @@ import Articles from './pages/Articles';
 import ArticleDetail from './pages/ArticleDetail';
 import Tutorials from './pages/Tutorials';
 import TutorialDetail from './pages/TutorialDetail';
+import ReleasePage from './pages/ReleasePage';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
 import Disclaimer from './pages/Disclaimer';
@@ -43,6 +44,8 @@ const App: React.FC = () => (
           <Route path="/build-log/:slug" element={<BuildLogDetail />} />
           <Route path="/tutorials" element={<Tutorials />} />
           <Route path="/tutorials/:slug" element={<TutorialDetail />} />
+          <Route path="/release" element={<ReleasePage />} />
+          <Route path="/releases" element={<ReleasePage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/disclaimer" element={<Disclaimer />} />

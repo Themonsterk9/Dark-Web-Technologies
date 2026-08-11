@@ -29,6 +29,7 @@ const staticRoutes: SitemapEntry[] = [
   { loc: '/articles', changefreq: 'weekly', priority: 0.9 },
   { loc: '/tutorials', changefreq: 'weekly', priority: 0.9 },
   { loc: '/build-log', changefreq: 'weekly', priority: 0.8 },
+  { loc: '/release', changefreq: 'weekly', priority: 0.9 },
   { loc: '/about', changefreq: 'monthly', priority: 0.7 },
   { loc: '/contact', changefreq: 'yearly', priority: 0.5 },
   { loc: '/privacy-policy', changefreq: 'yearly', priority: 0.3 },
