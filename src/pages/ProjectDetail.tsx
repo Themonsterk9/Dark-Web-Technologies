@@ -39,7 +39,7 @@ const ProjectDetail: React.FC = () => {
           <div className="header-top">
             <span className="category-badge">{category}</span>
             <span className={`status-badge status-${status.toLowerCase().replace(/\s+/g, '-')}`}>
-              {status}
+              {status === 'RELEASED' ? '● RELEASED' : status}
             </span>
           </div>
           <h1>{name}</h1>
@@ -51,9 +51,9 @@ const ProjectDetail: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="project-live-button"
-                aria-label={`Visit ${name} live application (opens in a new tab)`}
+                aria-label={`Visit Live Project ${name} (opens in a new tab)`}
               >
-                Visit {name} →
+                Visit Live Project →
               </a>
             </div>
           )}

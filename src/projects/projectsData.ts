@@ -5,7 +5,9 @@ export const projects: Project[] = [
   {
     slug: 'aether-ai',
     name: 'Aether AI',
-    status: 'Live',
+    status: 'RELEASED',
+    releaseState: 'RELEASED',
+    releaseType: 'LIVE',
     category: 'Artificial Intelligence',
     liveUrl: 'https://aether-ai-zeta.vercel.app/',
     displayTags: ['AI', 'RAG', 'Local AI', 'Knowledge Management'],
@@ -35,7 +37,9 @@ export const projects: Project[] = [
   {
     slug: 'gringotts-wizarding-bank',
     name: 'Gringotts Wizarding Bank',
-    status: 'Live',
+    status: 'RELEASED',
+    releaseState: 'RELEASED',
+    releaseType: 'LIVE',
     category: 'Banking Simulation',
     liveUrl: 'https://gringotts-wizarding-bank.vercel.app/',
     displayTags: ['Full Stack', 'Banking', 'Web Application'],
@@ -78,6 +82,7 @@ export const projects: Project[] = [
     slug: 'voyager-chat',
     name: 'Voyager Chat',
     status: 'In Development',
+    releaseState: 'DEVELOPMENT',
     category: 'Communication Application',
     summary: 'A multi-platform real-time messaging application with offline BLE mesh capabilities.',
     description:
@@ -109,6 +114,7 @@ export const projects: Project[] = [
     slug: 'project-blackout',
     name: 'Project Blackout',
     status: 'Upcoming',
+    releaseState: 'DEVELOPMENT',
     category: 'Game Development',
     summary: 'A high-performance multiplayer game built on Unreal Engine 5.',
     description:
@@ -136,3 +142,6 @@ export const projects: Project[] = [
 
 export const getProjectBySlug = (slug: string): Project | undefined =>
   projects.find((p) => p.slug === slug);
+
+export const getReleasedProjects = (): Project[] =>
+  projects.filter((p) => p.status === 'RELEASED' || p.releaseState === 'RELEASED');

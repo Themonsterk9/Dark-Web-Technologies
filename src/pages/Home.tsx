@@ -4,13 +4,13 @@ import './Home.css';
 import Button from '../components/Button';
 import Meta from '../seo/Meta';
 import Breadcrumbs from '../seo/Breadcrumbs';
-import FeaturedProjects from '../components/FeaturedProjects';
+import ReleasedProjects from '../components/ReleasedProjects';
 
 const Home: React.FC = () => (
   <>
     <Meta
       title="Dark Web Technologies – Home"
-      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies including Aether AI and Gringotts Wizarding Bank."
+      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies including officially released products Aether AI and Gringotts Wizarding Bank."
     />
     <Breadcrumbs />
     <div className="home container">
@@ -36,8 +36,8 @@ const Home: React.FC = () => (
         </div>
       </section>
 
-      {/* Featured Live Projects Showcase */}
-      <FeaturedProjects />
+      {/* Officially Released Projects Showcase */}
+      <ReleasedProjects />
 
       {/* Technology preview */}
       <section className="section preview-section">

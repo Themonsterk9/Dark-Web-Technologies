@@ -3,7 +3,7 @@ import React from 'react';
 import Card from '../components/Card';
 import Meta from '../seo/Meta';
 import Breadcrumbs from '../seo/Breadcrumbs';
-import FeaturedProjects from '../components/FeaturedProjects';
+import ReleasedProjects from '../components/ReleasedProjects';
 import { projects } from '../projects/projectsData';
 import './Projects.css';
 
@@ -11,7 +11,7 @@ const Projects: React.FC = () => (
   <>
     <Meta
       title="Projects – Dark Web Technologies"
-      description="Browse our portfolio of cutting-edge AI, web, communication, and game development projects including Aether AI, Gringotts Wizarding Bank, Voyager Chat, and Project Blackout."
+      description="Browse our portfolio of cutting-edge AI, web, communication, and game development projects including officially released products Aether AI and Gringotts Wizarding Bank."
     />
     <Breadcrumbs />
     <main className="projects-page container">
@@ -22,11 +22,11 @@ const Projects: React.FC = () => (
         </p>
       </header>
 
-      {/* Featured Projects Section */}
-      <FeaturedProjects />
+      {/* Officially Released Projects Section */}
+      <ReleasedProjects />
 
       <section className="all-projects-section">
-        <h2 className="all-projects-title">All Project Portfolio</h2>
+        <h2 className="all-projects-title">All Projects & Portfolio</h2>
         <div className="card-grid">
           {projects.map((p) => (
             <Card
@@ -52,7 +52,7 @@ const Projects: React.FC = () => (
                     className="card-live-link"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    Visit {p.name} →
+                    Visit Live Project →
                   </a>
                 </div>
               )}
