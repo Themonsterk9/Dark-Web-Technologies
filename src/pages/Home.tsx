@@ -2,15 +2,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Button from '../components/Button';
+import Card from '../components/Card';
 import Meta from '../seo/Meta';
 import Breadcrumbs from '../seo/Breadcrumbs';
-import ReleasedProjects from '../components/ReleasedProjects';
+import { projects } from '../projects/projectsData';
 
 const Home: React.FC = () => (
   <>
     <Meta
       title="Dark Web Technologies – Home"
-      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies including officially released products Aether AI and Gringotts Wizarding Bank."
+      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies including released products Aether AI and Gringotts Wizarding Bank."
     />
     <Breadcrumbs />
     <div className="home container">
@@ -36,8 +37,32 @@ const Home: React.FC = () => (
         </div>
       </section>
 
-      {/* Officially Released Projects Showcase */}
-      <ReleasedProjects />
+      {/* Featured Projects preview */}
+      <section className="section preview-section">
+        <h2>Featured Projects</h2>
+        <div className="card-grid">
+          {projects.map((p) => (
+            <Card
+              key={p.slug}
+              title={p.name}
+              status={p.status}
+              releaseState={p.releaseState}
+              deployment={p.deployment}
+              liveUrl={p.liveUrl}
+              link={`/projects/${p.slug}`}
+            >
+              <p className="project-card-summary">{p.summary}</p>
+              <div className="project-card-tech">
+                {(p.displayTags || p.technologies.slice(0, 4)).map((tech) => (
+                  <span key={tech} className="mini-tag">
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </Card>
+          ))}
+        </div>
+      </section>
 
       {/* Technology preview */}
       <section className="section preview-section">
