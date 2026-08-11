@@ -20,7 +20,7 @@ const ProjectDetail: React.FC = () => {
     return <NotFound />;
   }
 
-  const { name, status, category, description, technologies, features, disclaimer, liveUrl } = project;
+  const { name, status, category, description, technologies, features, disclaimer, liveUrl, deployment } = project;
 
   // Find related content across articles, tutorials, and build logs using helper module
   const relatedArticles = getArticlesByProject(name);
@@ -41,6 +41,11 @@ const ProjectDetail: React.FC = () => {
             <span className={`status-badge status-${status.toLowerCase().replace(/\s+/g, '-')}`}>
               {status === 'RELEASED' ? '● RELEASED' : status}
             </span>
+            {deployment && (
+              <span className="vercel-header-badge" title={`Deployed on ${deployment.provider} ${deployment.environment}`}>
+                ▲ {deployment.provider} {deployment.environment}
+              </span>
+            )}
           </div>
           <h1>{name}</h1>
           <p className="summary">{project.summary}</p>

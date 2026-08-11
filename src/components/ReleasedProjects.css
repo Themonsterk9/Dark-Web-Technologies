@@ -54,7 +54,7 @@
 .project-preview-area {
   position: relative;
   width: 100%;
-  height: 180px;
+  height: 190px;
   overflow: hidden;
   border-bottom: 1px solid rgba(34, 197, 94, 0.25);
   transition: transform 0.3s ease;
@@ -84,51 +84,79 @@
   justify-content: space-between;
 }
 
-/* Released Status Badges */
+/* Top Status Badges Wrapper */
 .status-badge-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .released-status-badge {
-  align-self: flex-start;
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.4rem;
   background: rgba(10, 10, 10, 0.85);
   border: 1px solid rgba(34, 197, 94, 0.5);
   border-radius: 20px;
-  padding: 0.35rem 0.85rem;
-  font-size: 0.78rem;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
   font-weight: 700;
   color: #4ade80;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   backdrop-filter: blur(4px);
-  box-shadow: 0 0 12px rgba(34, 197, 94, 0.25);
 }
 
 .released-dot {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background: #22c55e;
   box-shadow: 0 0 8px #22c55e;
 }
 
-.released-badge-inline {
+.live-status-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  background: rgba(34, 197, 94, 0.12);
-  border: 1px solid rgba(34, 197, 94, 0.4);
-  color: #4ade80;
+  gap: 0.4rem;
+  background: rgba(10, 10, 10, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  border-radius: 20px;
+  padding: 0.3rem 0.75rem;
   font-size: 0.75rem;
   font-weight: 700;
-  padding: 0.2rem 0.6rem;
-  border-radius: 4px;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
+  color: #38bdf8;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(4px);
+}
+
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.vercel-deploy-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  padding: 0.3rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.06em;
+  backdrop-filter: blur(4px);
+}
+
+.vercel-logo-icon {
+  width: 10px;
+  height: 9px;
+  color: #ffffff;
 }
 
 /* Graphic Nodes */
@@ -197,7 +225,7 @@
   font-size: 0.95rem;
   color: var(--color-text-muted, #a0a0a0);
   line-height: 1.55;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.1rem;
   flex: 1;
 }
 
@@ -206,7 +234,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.45rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .released-tag {
@@ -216,6 +244,35 @@
   padding: 0.25rem 0.65rem;
   font-size: 0.78rem;
   color: #e0e0e0;
+  font-weight: 500;
+}
+
+/* Deployment Metadata Bar */
+.deployment-meta-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.82rem;
+  color: var(--color-text-muted, #a0a0a0);
+}
+
+.env-pill {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 0.15rem 0.5rem;
+  font-size: 0.75rem;
+  color: #e0e0e0;
+  font-weight: 600;
+}
+
+.dot-separator {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.update-pill {
+  color: #4ade80;
   font-weight: 500;
 }
 
@@ -300,9 +357,7 @@
   .secondary-detail-link {
     justify-content: center;
   }
-  .card-top-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .status-badge-wrapper {
     gap: 0.35rem;
   }
 }
