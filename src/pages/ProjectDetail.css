@@ -63,6 +63,35 @@
   color: var(--color-text-muted, #a0a0a0);
 }
 
+.project-header-actions {
+  margin-top: 1.25rem;
+}
+
+.project-live-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #c40000 0%, #900000 100%);
+  color: #ffffff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.65rem 1.35rem;
+  border-radius: 6px;
+  text-decoration: none;
+  min-height: 44px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 12px rgba(196, 0, 0, 0.3);
+
+}
+
+.project-live-button:hover {
+  background: linear-gradient(135deg, #e00000 0%, #b00000 100%);
+  box-shadow: 0 6px 20px rgba(196, 0, 0, 0.5);
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .project-section {
   margin-bottom: 2.5rem;
 }

@@ -17,6 +17,19 @@
   font-size: 1.05rem;
 }
 
+.all-projects-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.all-projects-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  color: var(--color-text-primary, #e0e0e0);
+  margin-bottom: 1.5rem;
+}
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
@@ -44,4 +57,27 @@
   padding: 0.15rem 0.5rem;
   font-size: 0.75rem;
   color: var(--color-text-muted, #a0a0a0);
+}
+
+.card-live-cta-wrapper {
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(196, 0, 0, 0.25);
+}
+
+.card-live-link {
+  display: inline-flex;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-accent-red, #c40000);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  min-height: 36px;
+}
+
+.card-live-link:hover {
+  color: #ff3333;
+  text-decoration: underline;
 }

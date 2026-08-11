@@ -2,19 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import Button from '../components/Button';
-import Card from '../components/Card';
 import Meta from '../seo/Meta';
 import Breadcrumbs from '../seo/Breadcrumbs';
-import { projects } from '../projects/projectsData';
+import FeaturedProjects from '../components/FeaturedProjects';
 
 const Home: React.FC = () => (
   <>
     <Meta
       title="Dark Web Technologies – Home"
-      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies."
+      description="Explore cutting-edge AI, security, and digital software projects at Dark Web Technologies including Aether AI and Gringotts Wizarding Bank."
     />
     <Breadcrumbs />
-    <div className="home">
+    <div className="home container">
       {/* Hero */}
       <section className="hero-section">
         <div className="hero-content">
@@ -37,20 +36,8 @@ const Home: React.FC = () => (
         </div>
       </section>
 
-      {/* Projects preview */}
-      <section className="section preview-section">
-        <h2>Featured Projects</h2>
-        <div className="card-grid">
-          {projects.map((p) => (
-            <Card
-              key={p.slug}
-              title={p.name}
-              status={p.status}
-              link={`/projects/${p.slug}`}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Featured Live Projects Showcase */}
+      <FeaturedProjects />
 
       {/* Technology preview */}
       <section className="section preview-section">

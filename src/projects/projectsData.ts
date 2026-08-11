@@ -7,7 +7,9 @@ export const projects: Project[] = [
     name: 'Aether AI',
     status: 'Live',
     category: 'Artificial Intelligence',
-    summary: 'An artificial intelligence product leveraging large language models and RAG architecture.',
+    liveUrl: 'https://aether-ai-zeta.vercel.app/',
+    displayTags: ['AI', 'RAG', 'Local AI', 'Knowledge Management'],
+    summary: 'An AI-powered conversational platform focused on intelligent interactions, local AI, RAG, document processing, memory, knowledge management, and AI-assisted conversations.',
     description:
       'Aether AI is a cutting-edge artificial intelligence product designed for intelligent text processing, retrieval-augmented generation (RAG), and contextual assistance. It integrates advanced machine learning models into a modern web application.',
     technologies: [
@@ -35,7 +37,9 @@ export const projects: Project[] = [
     name: 'Gringotts Wizarding Bank',
     status: 'Live',
     category: 'Banking Simulation',
-    summary: 'A portfolio and educational banking simulation inspired by fictional lore.',
+    liveUrl: 'https://gringotts-wizarding-bank.vercel.app/',
+    displayTags: ['Full Stack', 'Banking', 'Web Application'],
+    summary: 'A full-stack banking application inspired by the Wizarding World, featuring authentication, vault/account management, deposits, withdrawals, transfers, and transaction history.',
     description:
       'Gringotts Wizarding Bank is a full-stack web application demonstrating secure user authentication, transactional processing, PDF statement generation, and QR code verification. It serves as a portfolio and educational banking simulation.',
     technologies: [

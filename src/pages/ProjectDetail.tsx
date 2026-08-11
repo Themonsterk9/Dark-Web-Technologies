@@ -20,7 +20,7 @@ const ProjectDetail: React.FC = () => {
     return <NotFound />;
   }
 
-  const { name, status, category, description, technologies, features, disclaimer } = project;
+  const { name, status, category, description, technologies, features, disclaimer, liveUrl } = project;
 
   // Find related content across articles, tutorials, and build logs using helper module
   const relatedArticles = getArticlesByProject(name);
@@ -44,6 +44,19 @@ const ProjectDetail: React.FC = () => {
           </div>
           <h1>{name}</h1>
           <p className="summary">{project.summary}</p>
+          {liveUrl && (
+            <div className="project-header-actions">
+              <a
+                href={liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-live-button"
+                aria-label={`Visit ${name} live application (opens in a new tab)`}
+              >
+                Visit {name} →
+              </a>
+            </div>
+          )}
         </header>
 
         <section className="project-section">

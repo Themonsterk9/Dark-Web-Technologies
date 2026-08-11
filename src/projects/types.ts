@@ -12,4 +12,6 @@ export interface Project {
   technologies: string[];
   features?: string[];
   disclaimer?: string;
+  liveUrl?: string;
+  displayTags?: string[];
 }
