@@ -94,8 +94,8 @@ const BuildLogDetail: React.FC = () => {
         )}
         <section className="content" dangerouslySetInnerHTML={{ __html: content }} />
 
-        {/* Safe AdSense-ready placement */}
-        <AdContainer slotId={import.meta.env.VITE_ADSENSE_SLOT_BUILDLOG as string} format="auto" />
+        {/* Monetization ad placement */}
+        <AdContainer format="auto" />
 
         {technologies && technologies.length > 0 && (
           <section className="technologies">

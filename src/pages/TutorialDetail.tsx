@@ -12,7 +12,7 @@ import './TutorialDetail.css';
 /**
  * Tutorial detail page.
  * Connects to technology, related project, and related articles.
- * Includes non-intrusive AdSense-ready ad container.
+ * Includes non-intrusive monetization placement container.
  */
 const TutorialDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -93,8 +93,8 @@ const TutorialDetail: React.FC = () => {
           <div className="content-text">{content}</div>
         </section>
 
-        {/* Safe AdSense-ready placement */}
-        <AdContainer slotId={import.meta.env.VITE_ADSENSE_SLOT_TUTORIAL as string} format="auto" />
+        {/* Monetization ad placement */}
+        <AdContainer format="auto" />
 
         {relatedProject && (
           <div className="related-project-box">

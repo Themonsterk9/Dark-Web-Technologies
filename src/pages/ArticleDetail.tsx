@@ -16,7 +16,7 @@ import './ArticleDetail.css';
  * Article detail page.
  * Loads the article by slug using the articles data layer.
  * Connects to related projects, tutorials, build logs, and sources.
- * Includes non-intrusive AdSense-ready ad container.
+ * Includes non-intrusive monetization placement container.
  */
 const ArticleDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -71,8 +71,8 @@ const ArticleDetail: React.FC = () => {
           <div className="content-text">{content}</div>
         </section>
 
-        {/* Safe AdSense-ready placement */}
-        <AdContainer slotId={import.meta.env.VITE_ADSENSE_SLOT_ARTICLE as string} format="auto" />
+        {/* Monetization ad placement */}
+        <AdContainer format="auto" />
 
         {tags && tags.length > 0 && (
           <div className="article-tags">

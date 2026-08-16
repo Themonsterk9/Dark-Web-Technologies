@@ -128,8 +128,8 @@ const Technology: React.FC = () => {
           })}
         </div>
 
-        {/* Safe AdSense-ready placement */}
-        <AdContainer slotId={import.meta.env.VITE_ADSENSE_SLOT_TECH as string} format="horizontal" />
+        {/* Monetization ad placement */}
+        <AdContainer format="horizontal" />
 
         {/* Overview by Project */}
         <section className="tech-by-project-section">
